@@ -1,0 +1,307 @@
+/* =====================================
+   BARBERPRO - IDENTIDADE VISUAL
+===================================== */
+
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/* PALETA DE CORES */
+:root {
+    --branco: #FFFFFF;
+    --grafite: #222222;
+    --cinza-claro: #E9E9E9;
+    --cinza-medio: #A6A6A6;
+    --fundo: #F7F7F5;
+
+    --destaque: #C8753D;
+    --destaque-hover: #A95F31;
+    --areia: #F3EAE3;
+
+    --fonte-titulo: 'Manrope', sans-serif;
+    --fonte-texto: 'DM Sans', sans-serif;
+}
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--fundo);
+    color: var(--grafite);
+    font-family: var(--fonte-texto);
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+.topbar {
+    background: var(--branco);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--grafite);
+    text-decoration: none;
+    font-family: var(--fonte-titulo);
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.brand span:last-child {
+    color: var(--destaque);
+}
+
+.brand-mark {
+    background: var(--destaque);
+    color: var(--branco) !important;
+    padding: 5px 11px;
+    border-radius: 7px;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--grafite);
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--destaque);
+}
+
+/* BOTÕES */
+.btn {
+    display: inline-block;
+    background: var(--destaque);
+    color: var(--branco);
+    padding: 13px 22px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--destaque-hover);
+    transform: translateY(-2px);
+}
+
+/* PÁGINA INICIAL */
+.hero {
+    padding: 100px 8%;
+    background: var(--areia);
+}
+
+.hero span {
+    color: var(--destaque);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    max-width: 650px;
+    margin: 20px 0;
+    font-family: var(--fonte-titulo);
+    font-size: 52px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: var(--grafite);
+}
+
+.hero p {
+    max-width: 500px;
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* SERVIÇOS */
+.services {
+    padding: 75px 8%;
+    background: var(--fundo);
+}
+
+.services h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    min-height: 140px;
+    padding: 25px;
+    background: var(--branco);
+    border: 1px solid var(--cinza-claro);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--destaque);
+}
+
+.service-card h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--destaque);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+/* AGENDAMENTO */
+.booking {
+    padding: 75px 8%;
+    background: var(--branco);
+}
+
+.booking h2 {
+    font-family: var(--fonte-titulo);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.booking > p {
+    color: #777777;
+    margin-bottom: 25px;
+}
+
+form {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 6px;
+    background: var(--branco);
+    font-family: var(--fonte-texto);
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--destaque);
+    box-shadow: 0 0 0 3px rgba(200, 117, 61, 0.12);
+}
+
+form .btn {
+    margin-top: 10px;
+}
+
+/* MENSAGEM */
+#mensagem {
+    margin-top: 20px;
+    color: var(--destaque);
+    font-weight: 700;
+}
+
+/* RODAPÉ */
+footer {
+    padding: 25px;
+    text-align: center;
+    background: var(--grafite);
+    color: var(--branco);
+    font-size: 12px;
+}
+
+footer p + p {
+    color: var(--cinza-medio);
+    margin-top: 5px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .topbar {
+        padding: 18px 5%;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .topbar > .btn {
+        margin: auto;
+    }
+
+    .hero {
+        padding: 65px 6%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .services,
+    .booking {
+        padding: 55px 6%;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services h2,
+    .booking h2 {
+        font-size: 26px;
+    }
+
+    .btn {
+        padding: 12px 17px;
+    }
+  }
