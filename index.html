@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="BarberPro: agendamento para barbearias.">
+
+    <title>BarberPro | Agendamento</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <a class="brand" href="#inicio">
+            <span class="brand-mark">B</span>
+            Barber<span>Pro</span>
+        </a>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#agendar">Agendar</a>
+        </nav>
+
+        <a href="#agendar" class="btn">
+            Agendar horário
+        </a>
+
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero">
+
+            <span>SEU TEMPO, SEU ESTILO</span>
+
+            <h1>Seu próximo visual começa aqui.</h1>
+
+            <p>
+                Agende seu horário com praticidade.
+                Escolha seu serviço e profissional favorito.
+            </p>
+
+            <a href="#servicos" class="btn">
+                Conhecer serviços
+            </a>
+
+        </section>
+
+        <section id="servicos" class="services">
+
+            <h2>Nossos serviços</h2>
+
+            <div class="service-container">
+
+                <div class="service-card">
+                    <h3>Corte tradicional</h3>
+                    <p>R$ 35,00</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Barba</h3>
+                    <p>R$ 25,00</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Corte + barba</h3>
+                    <p>R$ 55,00</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="agendar" class="booking">
+
+            <h2>Agende seu horário</h2>
+
+            <p>Preencha os dados para solicitar seu agendamento.</p>
+
+            <form id="bookingForm">
+
+                <label for="nome">Seu nome</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+                <label for="servico">Escolha seu serviço</label>
+
+                <select id="servico" required>
+
+                    <option value="">Selecione um serviço</option>
+
+                    <option value="Corte tradicional">
+                        Corte tradicional - R$ 35,00
+                    </option>
+
+                    <option value="Barba">
+                        Barba - R$ 25,00
+                    </option>
+
+                    <option value="Corte + barba">
+                        Corte + barba - R$ 55,00
+                    </option>
+
+                </select>
+
+                <label for="data">Data desejada</label>
+
+                <input
+                    type="date"
+                    id="data"
+                    required
+                >
+
+                <button type="submit" class="btn">
+                    Confirmar agendamento
+                </button>
+
+            </form>
+
+            <p id="mensagem"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 BarberPro. Projeto acadêmico.</p>
+        <p>Seu estilo, nosso compromisso.</p>
+    </footer>
+
+</body>
+
+              </html>
